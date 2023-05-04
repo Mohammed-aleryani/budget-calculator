@@ -15,7 +15,7 @@ const initialExpenses = localStorage.getItem("expenses")
   ? JSON.parse(localStorage.getItem("expenses"))
   : "[]";
 function App() {
-  const [expenses, setExpenses] = useState(initialExpenses);
+  const [expenses, setExpenses] = useState([]);
   const [charge, setCharge] = useState("");
   const [amount, setAmount] = useState("");
   const [alert, setAlert] = useState({ show: false });
